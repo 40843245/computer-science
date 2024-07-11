@@ -10,16 +10,7 @@ A Car must have an engine.
 
 The following code illustrates the use of dependency injection.
 
-<style> 
-  #GOOD {
-    background-color:green;
-  }
-  #ERROR {
-    background-color:red;
-  }
-</style>
-
-<p id="GOOD">GOOD</p>
+<p style="color:green">GOOD</p>
 
     class Car {
     
