@@ -1,22 +1,38 @@
 <!DOCTYPE html5>
 <html>
+<style>
+    #GOOD { 
+        background-color:green;
+    }
 
+    #BAD {
+        background-color:red;
+    }
+    
+</style>
+    
 <body>
     
 <h1>Dependency injection</h1> 
 <h2>Intro</h2>
-Dependency injection refers a mechanism that initialize the an object in constructor with given parameters.
+Dependency injection refers a mechanism that initialize the an object in constructor with given parameters. <br>
 
 <h2>Example</h2>
-Example 1
-Take the example from Android Studio Docs. ([2] in Ref section)
+<h3>Example 1</h3>
+Take the example from Android Studio Docs. ([2] in Ref section) <br>
 
-A Car must have an engine.
+A Car must have an engine. <br>
 
-The following code illustrates the use of dependency injection.
+The following code illustrates the use of dependency injection. <br>
 
-<p style="color:green">GOOD</p>
+<p id="GOOD">GOOD</p>
 
+<br>
+<br>
+    
+<pre>
+<code>
+    
     class Car {
     
         private Engine engine;
@@ -37,12 +53,27 @@ The following code illustrates the use of dependency injection.
             car.start();
         }
     }
+</code>
+</pre>
 
-The relationship of Car and Engine as follows.
+<br>
+<br>
+    
+The relationship of Car and Engine as follows. <br>
 
-![image](https://github.com/40843245/program_language/assets/75050655/530e9b59-cacc-4aea-bb9f-96695128db8d)
+<img src="https://github.com/40843245/program_language/blob/main/attachment/figure/screenshot/as-is.png" alt="as-is relationship"><br>
 
+------------------------------------------------------------------------------------------------------
+    
+While the following code does <b>NOT</b>use dependency injection. <br>
 
+<p id="BAD">BAD</p>
+    
+<br>
+<br>
+    
+<pre>
+<code>
     class Car {
     
         private Engine engine = new Engine();
@@ -59,20 +90,56 @@ The relationship of Car and Engine as follows.
             car.start();
         }
     }
-## Pro
-The pro of dependency injection:
+    
+</pre>
+</code>
+    
+<br>
+<br>
 
-1. Reusability of code
-2. Ease of refactoring
-3. Ease of testing
+Now, the relationship of Car and Engine as follows. <br>
 
-From the above example, image that you are a manufacturer of car. You may hope that the engine can be detached from the car since one can detach the engine when the engine is broken, one does NOT have to get a new car. The core concept can also apply to code. 
+<img src="https://github.com/40843245/program_language/blob/main/attachment/figure/screenshot/in.png" alt="inner-outer relationship"><br>
+    
+<h2>Pro</h2>
+The pro of dependency injection: <br>
 
-When one 
-## Ref
-[1] https://en.wikipedia.org/wiki/Dependency_injection
+<ol>
+    <li>Reusability of code</li>  
+    <li>Ease of refactoring</li>  
+    <li>Ease of testing</li>  
+</ol>
 
-[2] https://developer.android.com/training/dependency-injection
+From the above example, image that you are a manufacturer of car. <br> 
+
+You may hope that the engine can be detached from the car since one can detach the engine when the engine is broken, one does NOT have to get a new car.<br>
+
+The core concept can also apply to code. <br>
+
+Back to the above example (example 1). <br>
+
+If the property engine of the class Car is initialized in the constructor with given paremeter Engine object. (See GOOD code in example 1) <br>
+    
+Dependency injection is used. <br> 
+
+When the programmer write the class SUV and SportsCar which both are derived from the class Car, one does NOT have to create two class about engine. Only needs one. <br>
+
+The mechanism helps one to reuse class. Additionally, it helps us to refactor the code. <br>
+    
+Thus, it is easier to maintain the code. <br>
+
+It is nice to write code, isn't it? <br>
+
+If dependency injection is <b>NOT</b> used, (See BAD code in example 1) <br> 
+
+one has to create two class about engine for two different class SUV and SportsCar (which both are derived from the class Car). <br>
+
+It is troublesome to maintain the code, isn't it? <br>
+
+<h2>Ref</h2>
+[1] <a href="https://en.wikipedia.org/wiki/Dependency_injection">
+
+[2] <a href="https://developer.android.com/training/dependency-injection"> 
 
 </body>
 </html>
