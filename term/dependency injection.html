@@ -2,11 +2,11 @@
 <html>
 <style>
     #GOOD { 
-        background-color:green;
+        color:green;
     }
 
     #BAD {
-        background-color:red;
+        color:red;
     }
     
 </style>
@@ -21,7 +21,7 @@ Dependency injection refers a mechanism that initialize the an object in constru
 <h3>Example 1</h3>
 Take the example from Android Studio Docs. ([2] in Ref section) <br>
 
-A Car must have an engine. <br>
+A car must have an engine. <br>
 
 The following code illustrates the use of dependency injection. <br>
 
@@ -63,9 +63,9 @@ The relationship of Car and Engine as follows. <br>
 
 <img src="https://github.com/40843245/program_language/blob/main/attachment/figure/screenshot/as-is.png" alt="as-is relationship"><br>
 
-------------------------------------------------------------------------------------------------------
-    
-While the following code does <b>NOT</b>use dependency injection. <br>
+------------------------------------------------------------------------------------------------------ <br>
+
+While the following code does <b>NOT</b> use dependency injection. <br>
 
 <p id="BAD">BAD</p>
     
@@ -115,7 +115,9 @@ From the above example, image that you are a manufacturer of car. <br>
 You may hope that the engine can be detached from the car since one can detach the engine when the engine is broken, one does NOT have to get a new car.<br>
 
 The core concept can also apply to code. <br>
-
+------------------------------------------------------------------------------------------------------ <br>
+------------------------------------------------------------------------------------------------------ <br>
+    
 Back to the above example (example 1). <br>
 
 If the property engine of the class Car is initialized in the constructor with given paremeter Engine object. (See GOOD code in example 1) <br>
@@ -130,6 +132,8 @@ Thus, it is easier to maintain the code. <br>
 
 It is nice to write code, isn't it? <br>
 
+------------------------------------------------------------------------------------------------------ <br>
+    
 If dependency injection is <b>NOT</b> used, (See BAD code in example 1) <br> 
 
 one has to create two class about engine for two different class SUV and SportsCar (which both are derived from the class Car). <br>
@@ -137,9 +141,9 @@ one has to create two class about engine for two different class SUV and SportsC
 It is troublesome to maintain the code, isn't it? <br>
 
 <h2>Ref</h2>
-[1] <a href="https://en.wikipedia.org/wiki/Dependency_injection">
+[1] <a href="https://en.wikipedia.org/wiki/Dependency_injection">Dependency injection in Wiki</a>
 
-[2] <a href="https://developer.android.com/training/dependency-injection"> 
+[2] <a href="https://developer.android.com/training/dependency-injection">Dependency injection in Android Studio</a>
 
 </body>
 </html>
