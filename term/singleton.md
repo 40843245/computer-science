@@ -1,4 +1,11 @@
 # singleton 
+## Requirements
+A Singleton candidate must satisfy three requirements:
+
+1. controls concurrent access to a shared resource.
+2. access to the resource will be requested from multiple, disparate parts of the system.
+there can be only one object.
+3.If your proposed Singleton has only one or two of these requirements, a redesign is almost always the correct option.
 ## Ref
 When should I use singleton on the design pattern?
 
