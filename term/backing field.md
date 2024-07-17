@@ -7,10 +7,11 @@ In C#, a famous setter-getter property is a kind of property with backing field.
 ## Example
 ### In C#
     
+    private int m_Capacity;
     public int Capacity
     {
-            get { return Capacity > 0 ? Capacity : -666; }
-            set { Capacity = value; }
+        get { return m_Capacity > 0 ? m_Capacity : -666; }
+        set { m_Capacity = value; }
     }
 
 ### In Kotlin
