@@ -34,10 +34,10 @@ A logical operator can combine these expression with logic.
 
 Here are a list of atomic (i.e. the smallest part that we can divide it anymore) logical operators
 
-| Atomic logical operator | description | keyword | symbol (in some programming language etc) | keyword in query search language | symbol in query search language |
+| Atomic logical operator | description | keyword | symbol (in some programming language etc) | keyword in query search language in issuetracker | symbol in query search language in issuetracker|
 | ----------------------- | ----------- | ------- | ----------------------------------------- | -------------------------------- | ----------------------- |
 | not | opposite of an expression | `not` | `!` | `NOT` | `-` |
-| and | like `and` in English, `and` of two expression is true iff two expressions are **BOTH** true. | `and` | `&&` | `AND` | `&` |
+| and | like `and` in English, `and` of two expression is true iff two expressions are **BOTH** true. | `and` | `&&` | `AND` | `\ ` |
 | or | like `or` in English, `or` of two expression is true iff **at least one of** two expressions is true (or both). | `or` | `\|\|` | `OR` | `\|` |
 
 ***NOTES***
