@@ -31,9 +31,9 @@ Here are a list of atomic (i.e. the smallest part that we can divide it anymore)
 
 | Atomic logical operator | description | keyword | symbol (in some programming language etc) |
 | ----------------------- | ----------- | ------- | ----------------------------------------- |
-| not | opposite of an expression | not | ! |
-| and | like `and` in English, `and` of two expression is true iff two expressions are **BOTH** true. | `&&` |
-| or | like `or` in English, `or` of two expression is true iff **at least one of** two expressions is true (or both). | `\|\|` |
+| not | opposite of an expression | `not` | `!` |
+| and | like `and` in English, `and` of two expression is true iff two expressions are **BOTH** true. | `and` | `&&` |
+| or | like `or` in English, `or` of two expression is true iff **at least one of** two expressions is true (or both). | `or` | `\|\|` |
 
 ## Rule
 1. In search box, one can fill in one or more expressions (See the above word definition)
