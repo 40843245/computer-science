@@ -17,15 +17,31 @@ But don't worry about it. I will try to make it as easy as I can.
 ## Word definition 
 1. expression:
 
-In search box, one can fill in one or more expressions where an expression consist of one of followings: 
+ Here an expression consist of one of followings: 
 
-+ ***keywords***  (here a keyword refers solely consist of values) 
++ ***keyword***  (here a keyword refers solely consist of values) 
 
-+ key-value pairs with separator `:` (such as `status:isOpen`) ) .
++ ***key-value pair*** with separator `:` (such as `status:isOpen`) ) .
 
-2. concatenation with logical operator or space:
+2. logical operator:
 
-One can use logical operator to combine
+A logical operator can combine these expression with logic.
+
+Here are a list of atomic (i.e. the smallest part that we can divide it anymore) logical operators
+
+| Atomic logical operator | description | keyword | symbol (in some programming language etc) |
+| ----------------------- | ----------- | ------- | ----------------------------------------- |
+| not | opposite of an expression | not | ! |
+| and | like `and` in English, `and` of two expression is true iff two expressions are **BOTH** true. | `&&` |
+| or | like `or` in English, `or` of two expression is true iff **at least one of** two expressions is true (or both). | `\|\|` |
+
+## Rule
+1. In search box, one can fill in one or more expressions (See the above word definition)
+2. One can use logical operator to combine these expressions.
+
+
+***NOTES***
+NOTICE that when there are spaces between two expression, it is usually considered as `and` of two expressions (in most cases, but may differ rarely. Thus, I highly recommend that NOT to do so unless you can ensure thaat it is consider as `and` of two expressions.)
 
 (a key-value consists of a key and a value and seperate with special symbol between them.
 
