@@ -47,8 +47,6 @@ Here are a list of atomic (i.e. the smallest part that we can divide it anymore)
 ***NOTES***
 NOTICE that when there are spaces between two expression, it is usually considered as `and` of two expressions (in most cases, but may differ rarely. Thus, I highly recommend that NOT to do so unless you can ensure thaat it is considered as `and` of two expressions.)
 
-(
-
 ## Example
 In search query language,
 
