@@ -66,5 +66,10 @@ level:debug && tag:MainActivity
 
 will find all records that satisfies both the message is generate when debugging and tag is `MainActivity`.
 
+## Conclusion
+I have simply introduce the core concepts and rule of query search language. However, for brief, I didn't disccuss the details on it. For more details, see [query search language](https://developers.google.com/issue-tracker/concepts/search-query-language).
+
+
+
 ## Ref
-https://developers.google.com/issue-tracker/concepts/search-query-language
+[query search language](https://developers.google.com/issue-tracker/concepts/search-query-language)
