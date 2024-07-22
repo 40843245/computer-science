@@ -30,5 +30,5 @@ class LoggingInterceptor implements Interceptor {
 <img width="600" alt="interceptors@2x" src="https://github.com/user-attachments/assets/9f5e066a-ae8c-4a0b-9362-8e7ff1304c49">
 
 ## Ref
-[Interceptor (square.github.io)](https://square.github.io/okhttp/features/interceptors/)
-[Interceptor pattern (Wiki)](https://en.wikipedia.org/wiki/Interceptor_pattern)
++ [Interceptor (square.github.io)](https://square.github.io/okhttp/features/interceptors/)
++ [Interceptor pattern (Wiki)](https://en.wikipedia.org/wiki/Interceptor_pattern)
