@@ -26,6 +26,23 @@ class LoggingInterceptor implements Interceptor {
 }
 ```
 
+To register an application interceptor, call `addInterceptor()` method on `OkHttpClient.Builder` class.
+
+```
+OkHttpClient client = new OkHttpClient.Builder()
+    .addInterceptor(new LoggingInterceptor())
+    .build();
+
+Request request = new Request.Builder()
+    .url("http://www.publicobject.com/helloworld.txt")
+    .header("User-Agent", "OkHttp Example")
+    .build();
+
+Response response = client.newCall(request).execute();
+response.body().close();
+```
+
+
 ## Diagram
 <img width="600" alt="interceptors@2x" src="https://github.com/user-attachments/assets/9f5e066a-ae8c-4a0b-9362-8e7ff1304c49">
 
