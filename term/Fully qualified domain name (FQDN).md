@@ -8,10 +8,10 @@ Each `identifier` must
 + consist of one or many `digit` (i.e. `0` to `9`), `uppercase letter` (i.e. `A` to `Z`), `lowercase letter` (`a` to `z`), and `hypen` (i.e. `-`).
 + start with an `uppercase letter` or `lowercase letter`
 
-Here, each word is an `identifier`.
+Here, each labels is an `identifier`.
 
 FQDN must 
-+ consist of many `words`.
++ consist of many `labels`.
 + each word is seperated by `delimiter` `.`.
 + ends with the `delimiter` `.`.
 
