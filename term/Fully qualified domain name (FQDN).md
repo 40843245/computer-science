@@ -10,12 +10,15 @@ Each `identifier` must
 
 Here, each word is an `identifier`.
 
-FQDN consist of many `words`, each word is seperated by delimiter `.`.
+FQDN must 
++ consist of many `words`.
++ each word is seperated by `delimiter` `.`.
++ ends with the `delimiter` `.`.
 
 ## Example
 ### Example 1
-The url `https://en.wikipedia.org/wiki/Fully_qualified_domain_name` has a FQDN
-`en.wikipedia.org` and its hierarchy shows as follows.
+The url `https://en.wikipedia.org/wiki/Fully_qualified_domain_name` has a DNS
+`en.wikipedia.org` and the hierarchy of its corresponding FQDN `en.wikipedia.org.` shows as follows.
 
 ![image](https://github.com/user-attachments/assets/3695c578-954f-49c4-b47f-ece403377aee)
 
