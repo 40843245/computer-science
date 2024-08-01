@@ -17,5 +17,6 @@ There is a DNS zone as follows:
 | bar.example.com.      | CNAME  | foo.example.com. |
 | foo.example.com.      |  A   |   192.0.2.23 |
 
+![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 ## Ref
 [Canonical Name (CNAME) record](https://en.wikipedia.org/wiki/CNAME_record)
