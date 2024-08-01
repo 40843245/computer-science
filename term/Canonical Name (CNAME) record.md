@@ -17,6 +17,12 @@ There is a DNS zone as follows:
 | bar.example.com.      | CNAME  | foo.example.com. |
 | foo.example.com.      |  A   |   192.0.2.23 |
 
+When an `A record` lookup for `bar.example.com.` is carried out, the process is described as follows.
+
+The resolver will see a CNAME record then restart the lookup for `foo.example.com.`, and finally return `192.0.2.23`.
+
+Illustrated as follows.
+
 ![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
 ## Ref
 [Canonical Name (CNAME) record](https://en.wikipedia.org/wiki/CNAME_record)
