@@ -24,5 +24,8 @@ The resolver will see a CNAME record then restart the lookup for `foo.example.co
 Illustrated as follows.
 
 ![CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
+[CNAME_ex1](https://github.com/40843245/computer-science/blob/main/attachment/paradigm/CNAME_ex1.jpg)
+
 ## Ref
 [Canonical Name (CNAME) record](https://en.wikipedia.org/wiki/CNAME_record)
