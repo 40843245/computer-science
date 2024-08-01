@@ -12,10 +12,10 @@ DNS CNAME records are clarified in Section 10 of RFC 2181.
 
 There is a DNS zone as follows:
 
-NAME                    TYPE   VALUE
---------------------------------------------------
-bar.example.com.        CNAME  foo.example.com.
-foo.example.com.        A      192.0.2.23
+| FQDN                  |  TYPE |  VALUE |
+| --------------------- | ----- | ------ |
+| bar.example.com.      | CNAME  | foo.example.com. |
+| foo.example.com.      |  A   |   192.0.2.23 |
 
 ## Ref
 [Canonical Name (CNAME) record](https://en.wikipedia.org/wiki/CNAME_record)
