@@ -15,6 +15,15 @@ FQDN must
 + each word is seperated by `delimiter` `.`.
 + ends with the `delimiter` `.`.
 
+## Hierarchy
+
+Interpret it from right to left. Split it by delimiter `.`.
+
+**NOTES**
+
+The left-most label is the host name of FQDN.
+
+
 ## Example
 ### Example 1
 The url `https://en.wikipedia.org/wiki/Fully_qualified_domain_name` has a DNS
